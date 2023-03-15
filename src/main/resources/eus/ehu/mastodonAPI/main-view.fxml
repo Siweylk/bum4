@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.mastodonAPI.ViewController">
+   <children>
+      <TextField fx:id="author" disable="true" layoutX="175.0" layoutY="46.0" prefHeight="25.0" prefWidth="171.0" />
+      <Text layoutX="73.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Original author:" wrappingWidth="86.14453125" />
+      <TextField fx:id="date" disable="true" layoutX="175.0" layoutY="77.0" prefHeight="25.0" prefWidth="280.0" />
+      <CheckBox fx:id="boosted" disable="true" layoutX="389.0" layoutY="50.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Boosted" />
+      <Text layoutX="73.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publication date:" wrappingWidth="96.14453125" />
+      <Text layoutX="73.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toot:" wrappingWidth="80.14453125" />
+      <Button fx:id="Previous" layoutX="235.0" layoutY="334.0" mnemonicParsing="false" onAction="#show_prev" text="Previous" />
+      <Button fx:id="next" layoutX="363.0" layoutY="334.0" mnemonicParsing="false" onAction="#show_next" text="Next" />
+      <WebView fx:id="toot" layoutX="175.0" layoutY="130.0" prefHeight="148.0" prefWidth="280.0" />
+      <Text fx:id="errortxt" layoutX="246.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="139.0" />
+   </children>
+</AnchorPane>

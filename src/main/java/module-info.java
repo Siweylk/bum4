@@ -5,9 +5,10 @@ module eus.ehu.pokemonapi {
     requires org.kordamp.bootstrapfx.core;
     requires com.google.gson;
     requires okhttp3;
+    requires javafx.web;
 
-    opens eus.ehu.pokemonapi to javafx.fxml;
-    exports eus.ehu.pokemonapi;
+    opens eus.ehu.mastodonAPI to javafx.fxml;
+    exports eus.ehu.mastodonAPI;
 
-    opens eus.ehu.pokemonapi.domain to com.google.gson;
+    opens eus.ehu.mastodonAPI.domain to com.google.gson;
 }
